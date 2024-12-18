@@ -28,7 +28,7 @@ This is a Spring Boot-based Quiz Application that provides an API for managing a
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/anugrah0405/quizz_prep
    cd quizz_prep
    ```
 
