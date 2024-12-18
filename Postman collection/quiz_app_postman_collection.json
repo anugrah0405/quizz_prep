@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "aca6c88b-2558-41d4-a1c5-b9378d80240b",
+		"name": "quizz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37999619"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8084/api/quiz/submit?questionId=2&answer=halmet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/api/quiz/submit?questionId=2&answer=halmet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"quiz",
+						"submit"
+					],
+					"query": [
+						{
+							"key": "questionId",
+							"value": "2"
+						},
+						{
+							"key": "answer",
+							"value": "halmet"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all questions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/api/quiz/all-questions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"quiz",
+						"all-questions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "submit all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"questionId\": 1,\n        \"answer\": \"Paris\"\n    },\n    {\n        \"questionId\": 2,\n        \"answer\": \"4\"\n    },\n    {\n        \"questionId\": 3,\n        \"answer\": \"Shakespeare\"\n    },\n    {\n        \"questionId\": 4,\n        \"answer\": \"4\"\n    },\n    {\n        \"questionId\": 5,\n        \"answer\": \"Shakespeare\"\n    },\n    {\n        \"questionId\": 6,\n        \"answer\": \"4\"\n    },\n    {\n        \"questionId\": 7,\n        \"answer\": \"Shakespeare\"\n    },\n    {\n        \"questionId\": 8,\n        \"answer\": \"4\"\n    },\n    {\n        \"questionId\": 9,\n        \"answer\": \"Shakespeare\"\n    },\n    {\n        \"questionId\": 10,\n        \"answer\": null\n    }\n]\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/api/quiz/submit-all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"quiz",
+						"submit-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "start session",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/api/quiz/start",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"quiz",
+						"start"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "stats",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/api/quiz/stats",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"quiz",
+						"stats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get question",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/api/quiz/question",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"quiz",
+						"question"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
